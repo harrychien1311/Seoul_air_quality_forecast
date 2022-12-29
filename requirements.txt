@@ -1,7 +1,7 @@
 streamlit
 hopsworks
 prefect
-pickle
+#pickle
 pandas
 numpy
 scikit-learn
