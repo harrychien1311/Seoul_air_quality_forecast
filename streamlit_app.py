@@ -15,6 +15,7 @@ from datetime import timedelta, datetime
 # Loading the trained model
 pickle_in = open('xgb.pkl', 'rb')
 model = pickle.load(pickle_in)
+@st.cache()
 def collect_data():
     progress_bar = st.sidebar.header('⚙️ Working Progress')
     progress_bar = st.sidebar.progress(0)
@@ -35,7 +36,6 @@ def collect_data():
     progress_bar.progress(100) 
     return air_quality_dataframe
 
-@st.cache()
 def preprocess_data(df):
     # Select 5 newest days in the air quality data
     df_selected = df.drop("date", axis = 1)
