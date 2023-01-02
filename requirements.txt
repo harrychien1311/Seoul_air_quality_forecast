@@ -5,4 +5,4 @@ prefect
 pandas
 numpy
 scikit-learn
-xgboost
+xgboost==1.6.2
