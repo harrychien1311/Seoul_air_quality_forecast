@@ -1,6 +1,8 @@
 # Seoul_air_quality_forecast
 
-## Install required packages
-'''
+## Prerquisites
+See `requirments.txt`
+Running
+```bash
 pip install -r requirements.txt
-'''
+```
