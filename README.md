@@ -8,3 +8,8 @@ Running
 pip install -r requirements.txt
 ```
 
+## How to run
+
+```bash
+python3 streamlit_app.py
+```
